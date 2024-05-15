@@ -1,0 +1,24 @@
+@import "./../../../services/colors.scss";
+
+.not-found-page{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    :nth-child(1) {
+        color: $color-main;
+        font-family: "MontserratAlternates";
+        font-size: 8em;
+        font-weight: 700;
+    }
+
+    :nth-child(2) {
+        color: black;
+        font-family: "Montserrat";
+        font-size: 2em;
+        font-weight: 500;
+    }
+}

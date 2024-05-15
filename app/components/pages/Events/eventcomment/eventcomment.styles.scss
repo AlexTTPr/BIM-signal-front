@@ -1,0 +1,29 @@
+@import "./../../../../services/colors.scss";
+
+.comment {
+    margin: 4px;
+    padding: 16px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+
+    .author {
+        font-family: "MontserratAlternates";
+        font-size: 18px;
+        font-weight: bold;
+        color: $color-main;
+    }
+
+    .date {
+        display: block;
+        font-family: "MontserratAlternates";
+        font-size: 14px;
+        font-style: italic;
+        color: $color-main;
+        text-align: right;
+    }
+
+    .text {
+        font-family: "Montserrat";
+        font-size: 14px;
+    }
+}

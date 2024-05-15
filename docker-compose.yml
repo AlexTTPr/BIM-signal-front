@@ -1,0 +1,15 @@
+version: "3.8"
+
+
+services:
+  app: 
+    container_name: hackathon-client
+    image: hackathon-client
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 8000:8001
+      - 8080:8001
+    environment:
+      NODE_ENV: production

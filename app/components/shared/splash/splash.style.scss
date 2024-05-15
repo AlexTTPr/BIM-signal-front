@@ -1,0 +1,27 @@
+.splash {
+    position: relative;
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.splash > img {
+    border-radius: 32px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgb(255, 255, 255) 100%);
+   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgb(255, 255, 255) 100%);
+}
+
+.splash > label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 72px;
+    
+    color: black;
+}

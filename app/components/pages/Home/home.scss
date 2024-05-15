@@ -1,0 +1,153 @@
+@import '../../../services/colors';
+
+.content-wrapper {
+    width: 66%;
+    padding-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::selection {
+    background-color: #c95656; /* Цвет фона выделения текста */
+    color: whitesmoke; /* Цвет текста в выделении */
+  }
+
+
+.home-page{
+    .content-wrapper{
+        margin-right: 0px;
+        width: 85%;
+        padding-top: 72px;
+
+        svg{
+            width: 100%;
+           
+        }
+
+        .events-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .event-preview-wrapper:hover {
+                transform: scale(1.05) rotate(-1deg);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+            .event-preview-wrapper:nth-child(even):hover {
+                transform: scale(1.05) rotate(1deg);
+            }
+
+            .event-preview-wrapper {
+                margin: 10px;
+                max-width: 340px;
+                min-width: 200px;
+                border: 1px solid $color-main;
+                border-radius: 20px;
+
+                overflow: hidden;
+                transition: all 0.5s;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h4 {
+                    height: 40px;
+                }
+
+                img {
+                    width: 340px;
+                    height: 200px;
+                    object-fit: cover;
+                    /*-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+                    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));*/
+                }
+
+                .event-loc,
+                .event-date {
+                    display: flex;
+                    height: 40px;
+                    align-items: center;
+                    font-family: "Montserrat";
+
+                    svg {
+                        min-width: 24px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-about{
+        .about.red{
+            background-color: $color-main;
+
+            .desc{
+                color: #D9D9D9;
+                span{
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .aboutleft{
+            padding: 10px 0px;
+            margin: 10px 0px;
+            background-color: #e2e2e2;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 0px 32px 32px 0px; 
+
+            .desc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                font-family: "Montserrat";
+                width: 50%;
+                text-align: center;
+                span{
+                    color: $color-main;
+                }
+            }
+            .image{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 40px;
+            }
+        }
+
+        .aboutright{
+            padding: 10px 0px;
+            margin: 10px 0px;
+            background-color: #ebdfdd;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 32px 0px 0px 32px;
+
+            .desc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                font-family: "Montserrat";
+                width: 50%;
+                text-align: center;
+                span{
+                    color: $color-main;
+                }
+            }
+            .image{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 40px;
+            }
+        }
+
+        .border{
+            height: 100px;
+            width: 100%;
+            background-color: $color-main;
+        }
+    }
+}

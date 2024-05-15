@@ -1,0 +1,78 @@
+@import 'colors';
+@import 'bimstyles';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url(./../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: local('Montserrat'), url(./../fonts/Montserrat/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: local('Montserrat'), url(./../fonts/Montserrat/Montserrat-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    src: local('Montserrat'), url(./../fonts/Montserrat/Montserrat-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: local('MontserratAlternates'), url(./../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    font-weight: 500;
+    src: local('MontserratAlternates'), url(./../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    font-weight: 700;
+    src: local('MontserratAlternates'), url(./../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    font-weight: 900;
+    src: local('MontserratAlternates'), url(./../fonts/Montserrat_Alternates/MontserratAlternates-Black.ttf) format('truetype');
+}
+
+.text{
+    font-family: MontserratAlternates;
+}
+
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $color-title;
+}
+
+.h-100{
+    height: 100%;
+}
+.w-100{
+    width: 100%;
+}
+
+.svg-back{
+    position: absolute;
+}
+
+h1 {
+    color: $color-main;
+    font-family: "MontserratAlternates";
+    font-size: 32px;
+    text-align: center;
+    margin-top: 8px;    
+    margin-bottom: 32px;
+}

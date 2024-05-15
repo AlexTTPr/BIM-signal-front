@@ -1,0 +1,184 @@
+@import '../../../services/colors';
+
+.type-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    min-width: 500px;
+
+    .filter {
+        min-width: 400px;
+    }
+}
+
+.event-full-page {
+    display: flex;
+    direction: column;
+    .event-image {
+        display: flex;
+        justify-content: center;
+        img {
+            border-radius: 16px;
+            width: 70%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    
+    > .content-wrapper {
+        > div {
+            font-family: "Montserrat";
+        }
+    }
+
+    .comments {
+        > h4 {
+            font-family: "MontserratAlternates";
+            color: $color-main;
+            margin-top: 32px;
+            padding: 4px;
+            border-bottom: 2px $color-main solid;
+        }
+
+        > .doesnt-exist {
+            font-family: "Montserrat";
+            font-size: 18px;
+            color: gray;
+            text-align: center;
+        }
+    }
+}
+
+.event-sidebar {
+    position: fixed;
+    width: 15%;
+    top: 75px;
+    right: 0px;
+    
+    svg{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.events-page {
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 40px;
+
+    .content-wrapper {
+        height: calc(100% - 80px);
+        padding-top: 0px !important;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 20px 0px 0px 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 0px !important;
+        height: fit-content;
+        margin-top: 10px !important;
+        overflow: auto;
+        min-height: 98%;
+
+        .filters-wrapper {
+            padding-left: 20px;
+        }
+
+        .events-content {
+            padding-left: 10px;
+            //margin-top: 50px;
+            height: calc(100% - 130px);
+            width: calc(100% - 10px);
+            position: relative;
+
+            .doesnt-exist {
+                height: calc(100% - 50px);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .events-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .event-preview-wrapper:hover {
+                transform: scale(1.05) rotate(-1deg);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+            .event-preview-wrapper:nth-child(even):hover {
+                transform: scale(1.05) rotate(1deg);
+            }
+
+            .event-preview-wrapper {
+                margin: 10px;
+                max-width: 340px;
+                min-width: 200px;
+                border: 1px solid $color-main;
+                border-radius: 20px;
+                height: 400px;
+                overflow: hidden;
+                transition: all 0.5s;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h4 {
+                    height: 40px;
+                }
+
+                img {
+                    width: 340px;
+                    height: 200px;
+                    object-fit: cover;
+                    /*-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+                    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));*/
+                }
+
+                .event-loc,
+                .event-date {
+                    display: flex;
+                    height: 40px;
+                    align-items: center;
+                    font-family: "Montserrat";
+
+                    svg {
+                        min-width: 24px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.event-about {
+    padding: 30px;
+    background: #FFFFFF;
+    width: auto;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 32px 0px 0px 32px;
+}
+.event-loc,
+.event-date {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    padding: 10px;
+
+    svg {
+        min-width: 24px;
+        margin-right: 10px;
+    }
+}
